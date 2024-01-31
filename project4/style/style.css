@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+    direction: rtl;
+    font-family: Vazirmatn UI FD NL;
+}
+
+
+body {
+    background-color: #1b1b1b;
+}
+
+h1 {
+    width: 400px;
+    margin-right: 31%; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: linear-gradient(to right, #000000 1% , #1b1b1b 100%);
+    background-clip: text;
+    color: transparent;
+    font-size: 150%;
+    margin-top: 1px;
+    border: 4px double #1b1b1b;
+}
+#leaf{
+    width: 50px;
+}
+
+.header {
+    padding: 60px;
+    text-align: center;
+    color: white;
+    margin: auto;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/027/819/575/non_2x/beauty-salon-interior-free-photo.jpg');
+    border: 4px double #ed4e6b;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+@media (max-width: 800px) {
+    .header {
+        width: 300px;
+    }
+}
+
+article::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.navbar {
+    display: flex;
+    background-color: #ed4e6b;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: fixed;
+    margin-right: 25%;
+    width: 50%;
+    border: 4px double #1b1b1b;
+}
+
+.navbar a {
+    color: rgb(0, 0, 0);
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: #fe9fb3;
+    color: black;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#aboutus {
+    color: #000000;
+    text-align: center;
+    background-color: #ed4e6b;
+}
+
+section {
+    background-color: #005bd8;
+}
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    background-color: #000000;
+    color: #ed4e6b;
+    text-align: center;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+}
+
+.gallery {
+    display: flex;
+    gap: 1rem;
+    height: 400px;
+    text-align: center;
+}
+
+.gallery>div {
+    flex: 1;
+    background: var(--i) no-repeat center;
+    background-size: auto 100%;
+    border-radius: 1rem;
+    transition: all .7s cubic-bezier(.25, .4, .45, 1.4);
+    background-color: #000000;
+}
+
+.gallery>div:hover {
+    flex: 6;
+}
+
+.gallery::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#info {
+
+    color: #000000;
+    text-align: center;
+    background-color: #ed4e6b
+}
+
+#info::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    background-color: #000000;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+@media (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+img:hover {
+    background-color: #000000;
+    opacity: 0.5;
+
+}
+
+#footer {
+    color: #000000;
+    text-align: center;
+    background-color: #ed4e6b;
+    height: 150px;
+    padding-top: 20px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#law {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+}
+
+table {
+    border: 1px solid #ddd;
+    width: 100%;
+    color: #ed4e6b;
+    text-align: center;
+    background-color: #000000;
+}
+
+th,
+td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #1b1b1b;
+}
